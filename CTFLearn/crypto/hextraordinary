@@ -1,0 +1,13 @@
+Here, we get a hint in the prompt: the coder's name is ROXy.
+
+After some googling, I stumbled across this tool: http://www.xor.pw/#
+Which caught my eye because this is ROXy spelled backwords with the 'y' stripped. I threw in the 2 hexadecimal values that we're given: 0xc4115 0x4cf8
+
+Read more in-depth on what XOR (Exclusive Or) is and how it's calculated here:
+
+https://en.wikipedia.org/wiki/Exclusive_or
+https://www.codechef.com/PRJRF14/problems/XORSN
+
+I was able to get the flag needed from both the XOR calculator I linked previously, as well as 'printf':
+
+$printf '%#x\n' "$(( 0xc4115 ^ 0x4cf8 ))"
